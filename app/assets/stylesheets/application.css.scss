@@ -14,3 +14,30 @@
  *= require_self
  */
 @import "bootstrap";
+
+.jumbotron {
+  background: url('main.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 1050px;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.well {
+  width: 650px;
+  height: 200px;
+  text-align: center;
+  float: right;
+  margin-right: 100px;
+  margin-top: 200px;
+  background-color: #911146;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #ED8C2B;
+}
+
+#subtitle {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
