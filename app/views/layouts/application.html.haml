@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title RachaelSite
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    =link_to 'About', about_path, class: "main-nav-link"
+    =link_to 'Blog', blog_path, class: "main-nav-link"
+    =link_to "Mali's Page", mali_path, class: "main-nav-link"
+    =link_to 'Contact Rach', contact_path, class: "main-nav-link"
+
+    = yield
