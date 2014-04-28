@@ -14,9 +14,9 @@ feature 'Managing the homepage' do
     expect(page).to have_content '2014 Teach For America Corps Member'
   end
 
-  scenario "User navigates to the 'Blog' page" do
+  pending "User navigates to the 'Blog' page" do
     click_on 'Blog'
-    expect(page).to have_content "Rachael's Blog Posts"
+    expect(page).to have_content "Dashboard"
   end
 
   scenario "User navigates to 'Mali's Page'" do
