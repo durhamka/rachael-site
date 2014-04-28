@@ -13,7 +13,44 @@
  *= require_tree .
  *= require_self
  */
+$btn-primary-color: #88A825;
 @import "bootstrap";
+
+.navbar-brand img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-brand {
+  padding: 2px 15px;
+}
+
+.navbar {
+  height: 65px;
+  font-size: 20px;
+  padding-top: 10px;
+  background-color: #35203B;
+  border-radius: 0px;
+
+  a {
+    color: #fff;
+    font-weight: lighter;
+  }
+
+  a:hover {
+    color: #88A825;
+  }
+
+  li.ask a{
+    margin-left: 550px;
+  }
+}
+
+a.btn {
+  background-color: #88A825;
+  font-size: 20px;
+  border: none;
+}
 
 .jumbotron {
   background: url('main.jpg') no-repeat center center;
@@ -36,8 +73,11 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: #ED8C2B;
+  border: none;
 }
 
 #subtitle {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-weight: lighter;
+  color: #CF4A30;
 }

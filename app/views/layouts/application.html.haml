@@ -5,10 +5,26 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    %link{href: "http://farm5.staticflickr.com/4112/5170590074_066e255655_o.jpg", rel: "icon", type: "image/ico"}/
   %body
-    =link_to 'About', about_path, class: "main-nav-link"
-    =link_to 'Blog', blog_path, class: "main-nav-link"
-    =link_to "Mali's Page", mali_path, class: "main-nav-link"
-    =link_to 'Contact Rach', contact_path, class: "main-nav-link"
-
+    %nav.navbar{role: "navigation"}
+      .container-fluid
+        .navbar-header
+          %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{href: "/"}=image_tag("flower.png", :alt => "logo", :title => "Home")
+          %ul.nav.navbar-nav
+            %li
+              =link_to 'About', about_path
+            %li
+              =link_to 'Blog', blog_path
+            %li
+              =link_to "Mali's Page", mali_path
+            %li
+              =link_to 'Contact Rach', contact_path
+            %li.ask
+              =link_to 'Ask Ms.Rachael', ask_path, class: "btn btn-primary"
     = yield
