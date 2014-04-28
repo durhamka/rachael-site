@@ -81,3 +81,27 @@ a.btn {
   font-weight: lighter;
   color: #CF4A30;
 }
+
+.jumbotron-mali {
+  background-color: #ED8C2B;
+  text-align: center;
+
+  h1{
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    margin-top: -5px;
+    padding-top: 28px;
+    font-weight: bold;
+    color: #911146;
+  }
+
+  p {
+   font-size: 20px;
+   color: #CF4A30;
+  }
+
+  a {
+    color: #911146;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
