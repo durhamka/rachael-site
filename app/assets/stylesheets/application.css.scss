@@ -105,6 +105,9 @@ a.btn {
     color: #911146;
     margin-top: 10px;
     margin-bottom: 30px;
+    &:hover {
+      background-color: #CF4A30;
+    }
   }
 }
 
