@@ -106,3 +106,29 @@ a.btn {
     margin-bottom: 30px;
   }
 }
+
+.jumbotron-contact {
+  background-color: #ED8C2B;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+
+  h1 {
+    color: #911146;
+    padding-bottom: 30px;
+  }
+
+  p {
+    font-size: 20px;
+    color: #CF4A30;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline;
+    padding: 60px;
+  }
+}
