@@ -1,4 +1,4 @@
-class CreateAsks < ActiveRecord::Migration
+class CreateAsk < ActiveRecord::Migration
   def change
     create_table :asks do |t|
       t.string :name
