@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get 'mali', to: 'pages#mali'
   get 'contact', to: 'pages#contact'
 
-  resource :ask
+  resources :asks
 end

@@ -1,0 +1,19 @@
+.ask-rach-form
+  .row
+    .col-md-8.col-md-offset-2
+      %h1 Please fill this out to ask Ms.Rachael a question
+      =form_for Ask.new do |f|
+        .form-group
+          =f.label :name
+          =f.text_field :name, :class => 'form-control', placeholder: 'Name'
+        .form-group
+          =f.label :email
+          =f.text_field :email, :class => 'form-control', placeholder: 'Email'
+        .form-group
+          =f.label :subject
+          =f.text_field :subject, :class => 'form-control', placeholder: 'Subject'
+        .form-group
+          =f.label :body
+          =f.text_area :body, :class => 'form-control', placeholder: 'What is your question?'
+        =f.submit('Ask', :class => 'btn btn-default pull-right')
+        .clearfix
