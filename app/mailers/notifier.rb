@@ -1,10 +1,10 @@
 require 'mail'
 
 class Notifier < ActionMailer::Base
-  def ask_rach_email(ask)
-    @ask = ask
-    mail(to: "rach.durham@gmail.com", from: ask.email, subject: ask.subject)
-  end
+  #def ask_rach_email(ask)
+    #@ask = ask
+    #mail(to: "rach.durham@gmail.com", from: ask.email, subject: ask.subject)
+  #end
 
   Mail.defaults do
     delivery_method :smtp, {
@@ -19,9 +19,10 @@ class Notifier < ActionMailer::Base
   end
 
   Mail.deliver do
+    @ask = ask
     to 'kinseyann505@gmail.com'
     from 'sender@example.com'
-    subject 'testing send mail'
-    body 'Sending email with Ruby through SendGrid!'
+    subject ask.subject
+    body ask.body
   end
 end
