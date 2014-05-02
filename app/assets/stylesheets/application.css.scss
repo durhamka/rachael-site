@@ -64,7 +64,7 @@ a.btn {
   z-index: -1;
 }
 
-.well {
+.well.well-sm {
   width: 650px;
   height: 200px;
   text-align: center;
@@ -149,21 +149,16 @@ a.btn {
     padding-bottom: 10px;
     font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
     font-weight: bold;
+    font-size: 50px;
   }
 
   p {
-    font-size: 16px;
-    color: #CF4A30;
-  }
-
-  ul {
-    list-style-type: none;
     padding-top: 30px;
-  }
-
-  li {
-    display: inline;
-    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 22px;
+    color: #CF4A30;
+    font-weight: bold;
   }
 
   a {
@@ -172,10 +167,6 @@ a.btn {
     margin-bottom: 30px;
     font-weight: lighter;
     width: 275px;
-
-    &:hover {
-      background-color: #CF4A30;
-    }
   }
 }
 
