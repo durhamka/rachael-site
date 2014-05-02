@@ -19,10 +19,9 @@ class Notifier < ActionMailer::Base
   end
 
   Mail.deliver do
-    @ask = ask
     to 'kinseyann505@gmail.com'
     from 'sender@example.com'
-    subject ask.subject
-    body ask.body
+    subject 'This is a test.'
+    body 'This is a test.'
   end
 end
