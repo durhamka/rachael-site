@@ -13,13 +13,16 @@ class Notifier < ActionMailer::Base
     }
   end
 
-  @ask = Ask.find(params: ask[:id])
-  @mail = Mail.deliver do
+  mail = Mail.deliver do
     to 'kinseyann505@gmail.com'
-    from @ask.name
-    subject @ask.subject
+    from 'kinsey@gschool.it'
+    subject 'This is the subject of your email'
     text_part do
-      body @ask.body
+      body 'This is a a test'
+    end
+    html_part do
+      content_type 'text/html; charset=UTF-8'
+      body '<b>Hello world in HTML</b>'
     end
   end
 end
