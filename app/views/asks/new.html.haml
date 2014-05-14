@@ -17,3 +17,9 @@
           =f.text_area :body, :class => 'form-control', placeholder: 'What is your question?'
         =f.submit('Ask', :class => 'btn btn-default pull-right')
         .clearfix
+
+
+
+=form_for Ask.new do |f|
+  =f.label :email
+  =f.email_field :email

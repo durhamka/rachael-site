@@ -12,17 +12,4 @@ class Notifier < ActionMailer::Base
       :enable_starttls_auto => true
     }
   end
-
-  mail = Mail.deliver do
-    to 'kinseyann505@gmail.com'
-    from 'kinsey@gschool.it'
-    subject 'This is the subject of your email'
-    text_part do
-      body 'This is a a test'
-    end
-    html_part do
-      content_type 'text/html; charset=UTF-8'
-      body '<b>Hello world in HTML</b>'
-    end
-  end
 end
